@@ -6,7 +6,7 @@ from langchain.prompts import PromptTemplate
 import streamlit as st
 
 
-def generate_sql_query(question):
+def generate_sql_query(question, OPENAI_API_KEY):
     schema_info = """
     Schema for IPL.PUBLIC.DELIVERIES:
     - MATCH_ID: NUMBER
@@ -78,7 +78,7 @@ def generate_sql_query(question):
     chat_model = ChatOpenAI(
         temperature=0, 
         model_name="gpt-4", 
-        openai_api_key=os.getenv("OPENAI_API_KEY")
+        openai_api_key = OPENAI_API_KEY
     )
     
     # Generate the SQL query
