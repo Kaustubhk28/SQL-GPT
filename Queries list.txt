@@ -1,0 +1,45 @@
+1. Basic Queries
+"How many matches were played in 2023?"
+"Show the total number of deliveries in the IPL."
+"List all cities where matches were played in 2022."
+"Who won the toss in the first match of IPL 2008?"
+2. Aggregation Queries
+"Show the number of matches played each year."
+"Which team scored the most runs in an inning?"
+"How many sixes were hit by each player in 2023?"
+"Show the average runs scored per match in 2022."
+3. Join Queries
+"Show the number of deliveries bowled per day in IPL 2023."
+"List all matches where MS Dhoni was the Player of the Match."
+"Which bowler has taken the most wickets in IPL history?"
+"How many matches did Mumbai Indians win in 2021?"
+4. Filtering Queries
+"List all matches where the match type was a final."
+"Show all deliveries where a wicket was taken."
+"Which matches were tied?"
+"List matches where the result margin was greater than 50 runs."
+5. Complex Queries
+"Which team has the highest toss win percentage?"
+"Show the players with the most Player of the Match awards in IPL history."
+"List all matches where the target was successfully chased in fewer than 15 overs."
+"Which city has hosted the most IPL matches?"
+6. Date and Time Queries
+"How many matches were played in April 2023?"
+"List all matches that were played on weekends."
+"Show the number of deliveries bowled each day in the 2022 IPL season."
+"Which day had the most matches in IPL history?"
+7. Edge Cases
+"Show all matches where no Player of the Match was awarded."
+"List all matches where the toss winner lost the match."
+"Which matches had no result?"
+"Show deliveries with extra runs but no wickets."
+8. Validation and Error Cases
+"Show the number of matches played in an invalid year like 2050."
+"List deliveries where the MATCH_ID does not exist in the MATCHES table."
+"Show matches with invalid or missing dates."
+"Display the total runs for a team that doesn't exist, like 'XYZ Warriors'."
+9. Miscellaneous Queries
+"Which umpire has officiated the most matches?"
+"List all matches where a super over was played."
+"Which team scored the most runs in a single delivery?"
+"Show the top 5 players with the most sixes in IPL history."
