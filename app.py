@@ -166,7 +166,7 @@ if st.button("Submit 🟢"):
 
                 # Execute query
                 results, summary = execute_query_and_summarize(
-                    sql_query,
+                    sql_query
                     # SNOWFLAKE_USER,
                     # SNOWFLAKE_PASSWORD,
                     # SNOWFLAKE_ACCOUNT,
