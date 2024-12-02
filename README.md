@@ -2,6 +2,9 @@
 
 The **IPL Data Chatbot** is an interactive web application built with **Streamlit** that allows users to query IPL (Indian Premier League) data from 2008 to 2024 using natural language. The chatbot uses **OpenAI's GPT-4** to generate SQL queries dynamically and fetches data from a **Snowflake** database.
 
+**🌐 [Try the IPL Data Chatbot Here](https://iplchatbot.streamlit.app/)**
+
+---
 ## ✨ Features
 
 - **Natural Language Querying**: Users can ask questions in plain English.
