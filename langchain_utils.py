@@ -3,6 +3,8 @@ import snowflake.connector
 import pandas as pd
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
+import streamlit as st
+
 
 def generate_sql_query(question):
     schema_info = """
@@ -85,12 +87,12 @@ def generate_sql_query(question):
 
 def execute_query_and_summarize(query):
     conn = snowflake.connector.connect(
-        user=os.getenv("SNOWFLAKE_USER"),
-        password=os.getenv("SNOWFLAKE_PASSWORD"),
-        account=os.getenv("SNOWFLAKE_ACCOUNT"),
-        warehouse=os.getenv("SNOWFLAKE_WAREHOUSE"),
-        database=os.getenv("SNOWFLAKE_DATABASE"),
-        schema=os.getenv("SNOWFLAKE_SCHEMA")
+        user = st.secrets["SNOWFLAKE_USER"],
+        password = st.secrets["SNOWFLAKE_PASSWORD"],
+        account = st.secrets["SNOWFLAKE_ACCOUNT"],
+        warehouse = st.secrets["SNOWFLAKE_WAREHOUSE"],
+        database = st.secrets["SNOWFLAKE_DATABASE"],
+        schema = st.secrets["SNOWFLAKE_SCHEMA"]
     )
     cursor = conn.cursor()
 

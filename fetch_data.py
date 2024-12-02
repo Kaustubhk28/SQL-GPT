@@ -1,16 +1,17 @@
 import os
 import snowflake.connector
 import pandas as pd
+import streamlit as st
 
 def fetch_data(query):
     # Connect to Snowflake using environment variables
     conn = snowflake.connector.connect(
-        user=os.getenv("SNOWFLAKE_USER"),
-        password=os.getenv("SNOWFLAKE_PASSWORD"),
-        account=os.getenv("SNOWFLAKE_ACCOUNT"),
-        database=os.getenv("SNOWFLAKE_DATABASE"),
-        schema=os.getenv("SNOWFLAKE_SCHEMA"),
-        warehouse=os.getenv("SNOWFLAKE_WAREHOUSE"),
+        user = st.secrets["SNOWFLAKE_USER"],
+        password = st.secrets["SNOWFLAKE_PASSWORD"],
+        account = st.secrets["SNOWFLAKE_ACCOUNT"],
+        warehouse = st.secrets["SNOWFLAKE_WAREHOUSE"],
+        database = st.secrets["SNOWFLAKE_DATABASE"],
+        schema = st.secrets["SNOWFLAKE_SCHEMA"]
     )
     try:
         cursor = conn.cursor()
