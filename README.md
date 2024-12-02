@@ -41,15 +41,14 @@ Ensure you have the following installed:
 
 git clone https://github.com/Kaustubhk28/sql-gpt.git
 
-### 3. ⚙️ Configure Environment Variables
+## ⚙️ Configure Environment Variables
 To securely configure the application, use the following steps:
 
 Navigate to the .streamlit directory in the project.
 
 Create a secrets.toml file with the following content:
 
-toml
-Copy code
+
 [general]
 SNOWFLAKE_USER = "your_snowflake_username"
 SNOWFLAKE_PASSWORD = "your_snowflake_password"
@@ -58,28 +57,25 @@ SNOWFLAKE_DATABASE = "your_snowflake_database"
 SNOWFLAKE_SCHEMA = "your_snowflake_schema"
 SNOWFLAKE_WAREHOUSE = "your_snowflake_warehouse"
 OPENAI_API_KEY = "your_openai_api_key"
+
 Replace the placeholders (your_snowflake_username, your_openai_api_key, etc.) with your actual credentials.
 
-🚀 Run the Application Locally
+## 🚀 Run the Application Locally
 To run the application on your local machine:
 
 Start the app:
 
-bash
-Copy code
 streamlit run app.py
+
 Open your web browser and navigate to:
 
-arduino
-Copy code
 http://localhost:8501
+
 The application should now be running locally!
 
-📁 Project Structure
+## 📁 Project Structure
 Here’s a breakdown of the project structure:
 
-plaintext
-Copy code
 ipl-data-chatbot/
 ├── app.py                # Main Streamlit application script
 ├── fetch_data.py         # Script for fetching data from Snowflake
@@ -88,17 +84,19 @@ ipl-data-chatbot/
 ├── .streamlit/           
 │   └── secrets.toml      # Environment variable configuration file
 └── README.md             # Project documentation
-🌐 Try the Live App
+
+## 🌐 Try the Live App
 The IPL Data Chatbot is hosted online and available for use. Click the link below to try it out:
 
 🔗 IPL Data Chatbot
 
-💡 Features
+## 💡 Features
 Natural Language Querying: Ask questions like, "Which team scored the most runs in 2023?"
 Dynamic SQL Query Generation: Uses GPT-4 to convert natural language to SQL.
 Interactive Results: View, validate, and download query results as CSV.
 Secure Configuration: Sensitive credentials are stored securely using Streamlit's secrets.
-❤️ Acknowledgments
+
+## ❤️ Acknowledgments
 Streamlit: For creating a powerful framework for interactive web apps.
 OpenAI GPT-4: For natural language understanding and SQL generation.
 Snowflake: For efficient and scalable database management.
