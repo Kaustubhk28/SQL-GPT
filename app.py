@@ -167,12 +167,12 @@ if st.button("Submit 🟢"):
                 # Execute query
                 results, summary = execute_query_and_summarize(
                     sql_query,
-                    SNOWFLAKE_USER,
-                    SNOWFLAKE_PASSWORD,
-                    SNOWFLAKE_ACCOUNT,
-                    SNOWFLAKE_DATABASE,
-                    SNOWFLAKE_SCHEMA,
-                    SNOWFLAKE_WAREHOUSE,
+                    # SNOWFLAKE_USER,
+                    # SNOWFLAKE_PASSWORD,
+                    # SNOWFLAKE_ACCOUNT,
+                    # SNOWFLAKE_DATABASE,
+                    # SNOWFLAKE_SCHEMA,
+                    # SNOWFLAKE_WAREHOUSE,
                 )
 
                 # Results Section
