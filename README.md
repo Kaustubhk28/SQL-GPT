@@ -36,10 +36,13 @@ Ensure you have the following installed:
 - Streamlit
 - Snowflake Python Connector
 - OpenAI Python Library (`openai`)
-
+  
+---
 ### 2. Clone the Repository
 
 git clone https://github.com/Kaustubhk28/sql-gpt.git
+
+---
 
 ## ⚙️ Configure Environment Variables
 To securely configure the application, use the following steps:
@@ -47,7 +50,6 @@ To securely configure the application, use the following steps:
 Navigate to the .streamlit directory in the project.
 
 Create a secrets.toml file with the following content:
-
 
 [general]
 SNOWFLAKE_USER = "your_snowflake_username"
@@ -59,6 +61,8 @@ SNOWFLAKE_WAREHOUSE = "your_snowflake_warehouse"
 OPENAI_API_KEY = "your_openai_api_key"
 
 Replace the placeholders (your_snowflake_username, your_openai_api_key, etc.) with your actual credentials.
+
+---
 
 ## 🚀 Run the Application Locally
 To run the application on your local machine:
@@ -73,6 +77,8 @@ http://localhost:8501
 
 The application should now be running locally!
 
+---
+
 ## 📁 Project Structure
 Here’s a breakdown of the project structure:
 
@@ -85,8 +91,12 @@ ipl-data-chatbot/
 │   └── secrets.toml      # Environment variable configuration file
 └── README.md             # Project documentation
 
+---
+
 ## 🌐 Try the Live App
 The IPL Data Chatbot is hosted online and available for use. Click the link below to try it out:
+
+---
 
 🔗 IPL Data Chatbot
 
@@ -95,6 +105,8 @@ Natural Language Querying: Ask questions like, "Which team scored the most runs 
 Dynamic SQL Query Generation: Uses GPT-4 to convert natural language to SQL.
 Interactive Results: View, validate, and download query results as CSV.
 Secure Configuration: Sensitive credentials are stored securely using Streamlit's secrets.
+
+---
 
 ## ❤️ Acknowledgments
 Streamlit: For creating a powerful framework for interactive web apps.
