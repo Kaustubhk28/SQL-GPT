@@ -68,20 +68,20 @@ Replace the placeholders (your_snowflake_username, your_openai_api_key, etc.) wi
 To run the application on your local machine:
 
 Start the app:
-
+'''
 streamlit run app.py
-
+'''
 Open your web browser and navigate to:
-
+'''
 http://localhost:8501
-
+'''
 The application should now be running locally!
 
 ---
 
 ## 📁 Project Structure
 Here’s a breakdown of the project structure:
-
+'''
 ipl-data-chatbot/
 ├── app.py                # Main Streamlit application script
 ├── fetch_data.py         # Script for fetching data from Snowflake
@@ -90,7 +90,7 @@ ipl-data-chatbot/
 ├── .streamlit/           
 │   └── secrets.toml      # Environment variable configuration file
 └── README.md             # Project documentation
-
+'''
 ---
 
 ## 🌐 Try the Live App
